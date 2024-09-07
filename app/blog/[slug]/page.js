@@ -14,10 +14,13 @@ function getBlogContent(slug) {
 }
 
 /* creates a url for every blog post */
-export const generateStaticParams = async () => {
-    const blogs = getBlogMetadata('blogs')
-    return blogs.map((blog) => { slug: blog.slug })
-} 
+export async function generateStaticParams() {
+    const blogs = await getBlogMetadata('blogs')
+   
+    return blogs.map((blog) => ({
+      slug: blog.slug,
+    }))
+  }
 
 export async function generateMetadata({params, search_params}) {
     const id = params?.slug ? ' · ' + params?.slug : ''
