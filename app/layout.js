@@ -22,12 +22,20 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
+  
   let header = (
     <header>
       <Link href={'/'}>
         <h1>BAC&apos;s Notice Board</h1>
       </Link>
+      <div className="nav-links">
+        <Link href={'/about'}>
+          <p className="nav-link">About</p>
+        </Link>
+        <Link href={'/events'}>
+          <p className="nav-link">Events</p>
+        </Link>
+      </div>
     </header>
   )
 
