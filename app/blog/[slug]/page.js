@@ -4,6 +4,8 @@ import matter from "gray-matter"
 import Markdown from "markdown-to-jsx"
 import getBlogMetadata from "@/utils/getBlogMetadata"
 
+export const dynamic = 'force-dynamic'
+
 /* gets raw content from markdown file */
 function getBlogContent(slug) {
     const directory = 'blogs/'
