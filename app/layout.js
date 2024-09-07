@@ -35,6 +35,9 @@ export default function RootLayout({ children }) {
         <Link href={'/events'}>
           <p className="nav-link">Events</p>
         </Link>
+        <Link href={'/blog'}>
+          <p className="nav-link">Blog</p>
+        </Link>
       </div>
     </header>
   )
