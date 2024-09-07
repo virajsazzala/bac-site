@@ -1,6 +1,8 @@
 import BlogCard from "@/components/BlogCard";
 import getBlogMetadata from "@/utils/getBlogMetadata";
 
+export const dynamic = 'force-dynamic'
+
 export default function Home() {
     const blog_metadata = getBlogMetadata('blogs')
     return (
