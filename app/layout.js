@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   let header = (
     <header>
       <Link href={'/'}>
-        <h1>BAC's Notice Board</h1>
+        <h1>BAC&apos;s Notice Board</h1>
       </Link>
     </header>
   )
